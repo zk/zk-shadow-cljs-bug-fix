@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:browser
+  {:target :browser
+   :output-dir "target/dev"
+   :output-to "target/dev/main.js"
+   :modules {:main {:init-fn foo.core/init}}}}}
